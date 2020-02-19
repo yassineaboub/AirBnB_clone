@@ -17,7 +17,7 @@ class BaseModel:
         else:
                 self.id = str(uuid4())
                 self.created_at = datetime.now()
-    
+
     def __str__(self):
         return ("[{}] ({}) {}".format(self.__class__.__name__,
                 self.id, self.__dict__))
